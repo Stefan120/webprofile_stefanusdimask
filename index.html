@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Web Profile Stefanus Dimas</title>
+        <link rel="shortcut icon" type="image/logoz" href="img/logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Raleway:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2ef02f93e8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <style>
+
+
+        </style>
+    </head>
+    <body id="top">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Kemampuan</a></li>
+                    <li><a href="#quotes">Quotes</a></li>
+                    <li><a href="#social-media">Media Sosial</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Head-->
+        <div id="hero">
+            <div class="background-image"></div>
+            <h1>Selamat Datang di Website Portofolio Stefanus Dimas</h1>
+        </div>
+        <!-- Tentang Saya -->
+        <div id="about">
+            <h3 class="title">Tentang Saya</h3>
+            <div id="two-cols">
+                <div class="about-img"><img src="img/profile1.jpg" style="width: 200px; height: 200px; border-radius: 50%;" alt="profile pic"></div>
+                <p>&nbsp;</p>
+            </div>
+            <div class="about-bio">
+                <p>Nama saya Stefanus Dimas Kristianto, dan saat ini saya berusia 20 tahun. Saya tengah mengikuti 
+                    program studi S1 di Universitas Bandar Lampung, dengan fokus pada Fakultas Ilmu Komputer
+                    dan jurusan Informatika. Saat ini, saya telah menyelesaikan Empat semester dari program studi ini.</p>
+            </div>
+            <hr>
+        </div>
+        <!-- Kemampuan-->
+        <div id="skills">
+            <h3 class="title">Kemampuan dan Skills</h3>
+            <p>
+                Menguasai beberapa bahasa pemrograman, termasuk PHP, javascript, dan HTML, 
+                dengan pengalaman dalam mengembangkan berbagai proyek. Cukup menguasai Desain UI/UX menggunakan Figma.
+            </p>
+            <ul class="grid">
+                <li><i class="fa-brands fa-php"></class=></i><h4>PHP</h4></li>
+                <li><i class="fa-brands fa-square-js"></i></i><h4>Javascript</h4></li>
+                <li><i class="fa-brands fa-html5"></i></i><h4>HTML</h4></li>
+                <li><i class="fa-brands fa-figma"></i><h4>Figma</h4></li>
+            </ul>
+        </div>
+        
+        <!-- Quotes-->
+        <div id="quotes">
+            <hr>
+            <h3 class="title">Quotes</h3>
+            <p><img src="img/luffy.png" alt="Luffy" class="portrait-photos"></p>
+            <p class="quote">&ldquo;Tidak peduli seberapa sulit atau tidak mungkinnya, jangan pernah melupakan tujuan Anda&rdquo;</p>       
+            <p class="author">&mdash; Luffy D Halimawan</p>
+            <p><img src="img/gojo.webp" alt="gojo" class="portrait-photos"></p>
+            <p class="quote">&ldquo;Kau sebaiknya bekerja keras dan jangan sampai tertinggal&rdquo;</p>
+            <p class="author">&mdash; Gojo Kiko Satoru</p>
+            <p><img src="img/pain.jpg" alt="pain" class="portrait-photos"></p>
+            <p class="quote">&ldquo;Seseorang yang tidak tahu apa itu rasa sakit, 
+                tidak akan tahu apa itu kedamaian sejati&rdquo;</p>
+            <p class="author">&mdash; Pain Hooh</p>
+            <hr>
+        </div>
+
+        <!-- Footer-->
+        <footer id="social-media">
+            <ul>
+                <li><a href="https://www.instagram.com/stfanusdimas/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+                <p>&copy; <script>document.write(new Date().getFullYear());</script> Created with INFINITE LEARNING</p>
+                <p>&ldquo; Apapun masalahnya, domain expansion solusinya &rdquo;  &mdash;Hakari Kinji</p>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+        
+                var target = this.hash;
+                var $target = $(target);
+        
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-100
+                }, 900, 'swing', function () {
+                    window.location.hash = target-100;
+                });
+                   });
+        });
+        </script>
+    </body>
+</html>
